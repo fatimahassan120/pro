@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <title>My Profile</title>
   <style>
-    body { font-family: Arial; background: #eee; padding: 20px; }
+    body { font-family: Arial; background: #eee; padding: 20px; font-size: medium;}
     header,footer { background: #333; color: white; text-align: center; padding: 10px; }
     main { background: white; padding: 20px; border-radius: 10px; }
+    .box{width:1000px ;height: 150px;background-color: #e0dce4;margin: 20px;font-weight:30px;color:black;}
+    .box-relative{background-color: #675454;position: relative;left:3px ;top:20px;}
+    .box-absolute{position: absolute;top: 110px;background-color:#433d3d ;}
+    .box-fixed{position: fixed;}
   </style>
 </head>
 <body>
@@ -16,34 +20,36 @@
 </header>
 
 <main>
-  <h2>About Me:</h2>
+  <div class="box-absolute"><h2>*About Me</h2></div>
   <hr>
-  <p>I'm fatima.</p>
+  <div class="box"><p>I'm fatima.</p>
   <p> I study system & computer engineering. </p>
   <a href="https://github.com/"> this is my github link</a>
-  <p><img src="e:\Pictures\IMG20241223151055.jpg" alt="profile picture" width="2000" height="2000"></p>
+  <p><img src="e:\Pictures\IMG20241223151055.jpg" alt="profile picture" width="2000" height="2000"></p></div>
   <br>
 
   <h2>Skills:</h2>
   <hr>
-  <ul><li>Markting</li><li>photographer</li><li>c++</li><li>java (beginner)</li><li>python (beginner) </li></ul>
-  <br>
+  <div class="box"><ul><li>Markting</li><li>photographer</li><li>c++</li><li>java (beginner)</li><li>python (beginner) </li></ul></div>
+   <br>
 
   <h2>my language:</h2>
   <hr>
-  <ol><li>Arbic</li><li>English</li><li>Turkish</li></ol>
+<div class="box"><ol><li>Arbic</li><li>English</li><li>Turkish</li></ol></div>
   <br>
+
   <h2>my hoppies:</h2>
   <hr>
-  <pre>
+
+  <div class="box"><pre>
     i love reading 
     and cooking.
     ,i love photography and drawing.
-  </pre>
+  </pre></div>
   <br>
   <h2> my goal:</h2>
   <hr>
-  <b><strong>I want to be a good<strong> programmer</strong></b>
+  <b><strong>I want to be a good<strong> programmer.</strong></b>
   <br>
 </main>
 
